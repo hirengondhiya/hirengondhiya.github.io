@@ -1,0 +1,62 @@
+$menu-on-hover-color: red;
+$menu-items-color: green;
+$menu-background: orange;
+$menu-current-link-color: blue;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:visited, &:active, &:link, &:hover {
+    color: #000;
+  }
+}
+body {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .menu-button {
+    display: none;
+    .icon {
+      width: 48px;
+    }
+  }
+
+  .visible {
+    display: block;
+  }
+}
+.nav {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+
+  ul {
+    background-color: $menu-background;
+    li {
+      list-style: none;
+      background-color: $menu-items-color;
+      border: black solid 1px;
+      &.current-link {
+        // background-color: $menu-current-link-color;
+      }
+    }
+  }
+}
