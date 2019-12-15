@@ -3,6 +3,28 @@ $menu-items-color: green;
 $menu-background: orange;
 $menu-current-link-color: blue;
 
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +44,19 @@ a {
 body {
   // padding: 20px;
   min-height: 100vh;
+
+  @include breakpoint(md) {
+    margin: 0 10vw;
+  }
+  @include breakpoint(lg) {
+    margin: 0 20vw;
+  }
 }
 .header {
   padding: 30px;
+  @include breakpoint(sm) {
+    padding-top: 75px;
+  }
   .header-top {
     display: flex;
     justify-content: space-between;
@@ -35,12 +67,19 @@ body {
       text-transform: uppercase;
       font-size: 1.5em;
       font-weight: bold;
+
+      @include breakpoint(sm) {
+        font-size: 4em;
+      }
     }
 
     .menu-button {
       display: none;
       .icon {
         width: 48px;
+        @include breakpoint(sm) {
+          width: 86px;
+        }
       }
     }
 
@@ -52,6 +91,10 @@ body {
   .nav {
     display: none;
     background-color: #fff;
+
+    @include breakpoint(sm) {
+      margin-top: 1vh;
+    }
 
     &.visible {
       display: block;
@@ -66,7 +109,9 @@ body {
         .nav-link {
           font-size: large;
           font-weight: bold;
-
+          @include breakpoint(sm){
+            font-size: 2.5em;
+          }
           &.active {
             background-color: #888888;
           }
@@ -75,6 +120,9 @@ body {
             // background-color: #f44336;
             // color: white;
             padding: 14px 0;
+            @include breakpoint(sm){
+              padding: 16px 0;
+            }
             text-align: center;
             // text-decoration: none;
             display: inline-block;
@@ -95,6 +143,9 @@ body {
   // background-color: teal;
   // background-size: cover;
   min-height: 90vh;
+  @include breakpoint(sm){
+    margin-top: 1vh;
+  }
   .profile-img {
     img {
       transform: translate(-50%, 0);
@@ -104,6 +155,11 @@ body {
       margin-top: 25px;
       position: relative;
       left: 50%;
+
+      @include breakpoint(sm) {
+        width: 500px;
+        height: 500px;
+      }
     }
   }
   .social-media {
@@ -113,12 +169,19 @@ body {
     justify-content: center;
     align-items: center;
 
+    @include breakpoint(sm){
+      margin-top: 5vh;
+    }
+
     li:not(:first-child) {
       padding-left: 20px;
     }
     img {
       // border: #fff 2px solid;
       height: 64px;
+      @include breakpoint(sm){
+        height: 128px;
+      }
     }
   }
 }
@@ -128,12 +191,23 @@ body {
   margin-top: 20px;
   text-align: center;
 
+  @include breakpoint(sm) {
+    margin-top: 3vh;
+  }
+
   .greeting-title {
     font-size: xx-large;
     padding: 25px 0;
+    @include breakpoint(sm) {
+      font-size: 4em;
+    }
   }
 
   .greeting-text {
     font-size: x-large;
+    @include breakpoint(sm) {
+      font-size: 2.5em;
+      margin-top: 1vh;
+    }
   }
 }
