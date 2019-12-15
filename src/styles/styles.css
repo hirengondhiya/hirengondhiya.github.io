@@ -17,51 +17,58 @@ body {
 }
 
 .header {
+  padding: 30px;
+}
+.header .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 30px;
 }
-.header .title {
+.header .header-top .title {
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: bold;
 }
-.header .menu-button {
+.header .header-top .menu-button {
   display: none;
 }
-.header .menu-button .icon {
+.header .header-top .menu-button .icon {
   width: 48px;
 }
-.header .visible {
+.header .header-top .visible {
   display: block;
 }
-
-.nav {
+.header .nav {
   display: none;
   background-color: #fff;
 }
-.nav.visible {
+.header .nav.visible {
   display: block;
 }
-.nav ul li {
+.header .nav ul li {
   list-style: none;
   border-bottom: #fff solid 0.5px;
 }
-.nav ul li a:link, .nav ul li a:visited {
-  padding: 14px 25px;
+.header .nav ul li .nav-link {
+  font-size: large;
+  font-weight: bold;
+}
+.header .nav ul li .nav-link.active {
+  background-color: #888888;
+}
+.header .nav ul li .nav-link:link, .header .nav ul li .nav-link:visited {
+  padding: 14px 0;
   text-align: center;
   display: inline-block;
   width: 100%;
 }
-.nav ul li a:hover, .nav ul li a:active {
+.header .nav ul li .nav-link:hover, .header .nav ul li .nav-link:active {
   background-color: #000;
   color: #fff;
 }
 
 .content {
-  background-size: cover;
   min-height: 90vh;
 }
 .content .profile-img img {
@@ -69,7 +76,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-top: 25px;
   position: relative;
   left: 50%;
 }
@@ -88,10 +95,14 @@ body {
 }
 
 .greeting {
-  padding: 0 25px;
-  text-align: center;
+  padding: 0 30px;
   margin-top: 20px;
+  text-align: center;
 }
 .greeting .greeting-title {
   font-size: xx-large;
+  padding: 25px 0;
+}
+.greeting .greeting-text {
+  font-size: x-large;
 }
