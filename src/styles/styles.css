@@ -56,7 +56,8 @@ body {
   width: 100%;
 }
 .nav ul li a:hover, .nav ul li a:active {
-  background-color: red;
+  background-color: #000;
+  color: #fff;
 }
 
 .content {
