@@ -34,6 +34,11 @@ body {
     padding-top: 75px;
   }
 }
+@media (min-width: 992px) {
+  .header {
+    padding-top: 35px;
+  }
+}
 .header .header-top {
   display: flex;
   justify-content: space-between;
@@ -50,6 +55,11 @@ body {
     font-size: 4em;
   }
 }
+@media (min-width: 992px) {
+  .header .header-top .title {
+    font-size: 2.5em;
+  }
+}
 .header .header-top .menu-button {
   display: none;
 }
@@ -59,6 +69,11 @@ body {
 @media (min-width: 768px) {
   .header .header-top .menu-button .icon {
     width: 86px;
+  }
+}
+@media (min-width: 992px) {
+  .header .header-top .menu-button .icon {
+    width: 64px;
   }
 }
 .header .header-top .visible {
@@ -87,6 +102,11 @@ body {
 @media (min-width: 768px) {
   .header .nav ul li .nav-link {
     font-size: 2.5em;
+  }
+}
+@media (min-width: 992px) {
+  .header .nav ul li .nav-link {
+    font-size: 1.25em;
   }
 }
 .header .nav ul li .nav-link.active {
@@ -131,6 +151,12 @@ body {
     height: 500px;
   }
 }
+@media (min-width: 992px) {
+  .content .profile-img img {
+    width: 300px;
+    height: 300px;
+  }
+}
 .content .social-media {
   display: flex;
   margin-top: 30px;
@@ -154,6 +180,11 @@ body {
     height: 128px;
   }
 }
+@media (min-width: 992px) {
+  .content .social-media img {
+    height: 64px;
+  }
+}
 
 .greeting {
   padding: 0 30px;
@@ -165,6 +196,11 @@ body {
     margin-top: 3vh;
   }
 }
+@media (min-width: 992px) {
+  .greeting {
+    margin-top: 1vh;
+  }
+}
 .greeting .greeting-title {
   font-size: xx-large;
   padding: 25px 0;
@@ -174,6 +210,11 @@ body {
     font-size: 4em;
   }
 }
+@media (min-width: 992px) {
+  .greeting .greeting-title {
+    font-size: 2.5em;
+  }
+}
 .greeting .greeting-text {
   font-size: x-large;
 }
@@ -181,5 +222,11 @@ body {
   .greeting .greeting-text {
     font-size: 2.5em;
     margin-top: 1vh;
+  }
+}
+@media (min-width: 992px) {
+  .greeting .greeting-text {
+    margin-top: 0.5vh;
+    font-size: 1.5em;
   }
 }
