@@ -12,6 +12,10 @@ a:visited, a:active, a:link, a:hover {
   color: #000;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
 body {
   min-height: 100vh;
 }
@@ -130,18 +134,22 @@ body {
 
 .content {
   min-height: 90vh;
+  padding: 0 30px 20px 30px;
 }
 @media (min-width: 768px) {
   .content {
     margin-top: 1vh;
   }
 }
+
+.content .profile-img {
+  margin-top: 25px;
+}
 .content .profile-img img {
   transform: translate(-50%, 0);
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-top: 25px;
   position: relative;
   left: 50%;
 }
@@ -185,48 +193,104 @@ body {
     height: 64px;
   }
 }
-
-.greeting {
-  padding: 0 30px;
-  margin-top: 20px;
+.content .greeting {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .greeting {
+  .content .greeting {
     margin-top: 3vh;
   }
 }
 @media (min-width: 992px) {
-  .greeting {
+  .content .greeting {
     margin-top: 1vh;
   }
 }
-.greeting .greeting-title {
+.content .greeting .greeting-title {
   font-size: xx-large;
   padding: 25px 0;
 }
 @media (min-width: 768px) {
-  .greeting .greeting-title {
+  .content .greeting .greeting-title {
     font-size: 4em;
   }
 }
 @media (min-width: 992px) {
-  .greeting .greeting-title {
+  .content .greeting .greeting-title {
     font-size: 2.5em;
   }
 }
-.greeting .greeting-text {
+.content .greeting .greeting-text {
   font-size: x-large;
 }
 @media (min-width: 768px) {
-  .greeting .greeting-text {
+  .content .greeting .greeting-text {
     font-size: 2.5em;
     margin-top: 1vh;
   }
 }
 @media (min-width: 992px) {
-  .greeting .greeting-text {
+  .content .greeting .greeting-text {
     margin-top: 0.5vh;
     font-size: 1.5em;
   }
+}
+
+.content .title .title-text {
+  text-align: center;
+  font-size: 1.75em;
+  padding-bottom: 2.5vh;
+  border-bottom: ridge;
+}
+.content .about-me {
+  margin-top: 20px;
+  font-size: 1.25em;
+}
+.content .skills {
+  margin-top: 25px;
+}
+.content .skills .sub-title {
+  font-size: 1.5em;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: ridge;
+}
+.content .skills .skills-data {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.content .skills .skills-data div {
+  width: 40%;
+}
+.content .skills .skills-data .skill-title {
+  margin-bottom: 10px;
+}
+.content .skills .skills-data .skill-items {
+  list-style: none;
+}
+.content .skills .skills-data .skill-items .skill-item {
+  padding-left: 5px;
+}
+.content .skills .skills-data .skill-items .skill-item:not(:first-child) {
+  padding-top: 5px;
+}
+.content .download {
+  margin-top: 25px;
+  text-align: center;
+}
+.content .download .download-cv:link,
+.content .download .download-cv:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: #000 2px solid;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.content .download .download-cv:hover,
+.content .download .download-cv:active {
+  background-color: #000;
+  color: #fff;
 }

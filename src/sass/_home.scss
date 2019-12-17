@@ -1,0 +1,81 @@
+.content {
+  .profile-img {
+    margin-top: 25px;
+    img {      
+      transform: translate(-50%, 0);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: relative;
+      left: 50%;
+
+      @include breakpoint(sm) {
+        width: 500px;
+        height: 500px;
+      }
+      @include breakpoint(md) {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  .social-media {
+    display: flex;
+    margin-top: 30px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      margin-top: 5vh;
+    }
+
+    li:not(:first-child) {
+      padding-left: 20px;
+    }
+    img {
+      // border: #fff 2px solid;
+      height: 64px;
+      @include breakpoint(sm) {
+        height: 128px;
+      }
+      @include breakpoint(md) {
+        height: 64px;
+      }
+    }
+  }
+  .greeting {
+    // padding: 0 30px;
+    text-align: center;
+
+    @include breakpoint(sm) {
+      margin-top: 3vh;
+    }
+    @include breakpoint(md) {
+      margin-top: 1vh;
+    }
+
+    .greeting-title {
+      font-size: xx-large;
+      padding: 25px 0;
+      @include breakpoint(sm) {
+        font-size: 4em;
+      }
+      @include breakpoint(md) {
+        font-size: 2.5em;
+      }
+    }
+
+    .greeting-text {
+      font-size: x-large;
+      @include breakpoint(sm) {
+        font-size: 2.5em;
+        margin-top: 1vh;
+      }
+      @include breakpoint(md) {
+        margin-top: 0.5vh;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
