@@ -284,11 +284,12 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border: #000 2px solid;
+  border: #000 4px solid;
   padding: 20px;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+  color: #000;
 }
 .content .download .download-cv:hover,
 .content .download .download-cv:active {

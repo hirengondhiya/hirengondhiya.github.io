@@ -54,17 +54,19 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      border: #000 2px solid;
+      border: #000 4px solid;
       padding: 20px;
       text-align: center;
       font-size: 1.5em;
       font-weight: bold;
+    //   background-color: #888;
+      color: #000;
     }
 
     .download-cv:hover,
     .download-cv:active {
-      background-color: #000;
-      color: #fff;
+        background-color: #000;
+        color: #fff;
     }
   }
 }
