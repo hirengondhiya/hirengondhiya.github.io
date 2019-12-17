@@ -288,6 +288,7 @@ body {
   padding: 20px;
   text-align: center;
   font-size: 1.5em;
+  font-weight: bold;
 }
 .content .download .download-cv:hover,
 .content .download .download-cv:active {
