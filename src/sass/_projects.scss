@@ -1,0 +1,51 @@
+.projects {
+  margin: 15px 0;
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 25px;
+
+    @include breakpoint(md) {
+      grid-template-rows: auto auto;
+    }
+
+    .project-title {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      // font-size: 1.25em;
+      h2 {
+        font-size: 1.25em;
+      }
+    } 
+    .project-hero {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      img {
+        width: 100%;
+      }
+    }
+    .project-desc {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .align-left {
+      @include breakpoint(md) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+      }
+    }
+    .align-right {
+      @include breakpoint(md) {
+        grid-column-start: 7;
+        grid-column-end: 13;
+      }
+    }
+  }
+}

@@ -298,3 +298,52 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+.projects {
+  margin: 15px 0;
+}
+.projects .project {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 25px;
+}
+@media (min-width: 992px) {
+  .projects .project {
+    grid-template-rows: auto auto;
+  }
+}
+.projects .project .project-title {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.projects .project .project-title h2 {
+  font-size: 1.25em;
+}
+.projects .project .project-hero {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.projects .project .project-hero img {
+  width: 100%;
+}
+.projects .project .project-desc {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.projects .project .project-desc p {
+  font-size: 1.2em;
+}
+@media (min-width: 992px) {
+  .projects .project .align-left {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}
+@media (min-width: 992px) {
+  .projects .project .align-right {
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
+}
