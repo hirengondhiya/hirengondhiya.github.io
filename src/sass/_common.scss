@@ -107,6 +107,9 @@ body {
     display: none;
     background-color: #fff;
 
+    border-top: ridge;
+    border-bottom: ridge;
+
     @include breakpoint(sm) {
       margin-top: 1vh;
     }
