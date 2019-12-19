@@ -1,0 +1,94 @@
+.blogs {
+    margin: 15px 0;
+  
+    .blog {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto auto;
+      grid-row-gap: 10px;
+      grid-column-gap: 25px;
+  
+      @include breakpoint(md) {
+        grid-template-rows: auto auto;
+  
+      }
+  
+      .blog-title {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        // border-bottom: ridge;
+        // font-size: 1.25em;
+        h2 {
+          font-size: 1.25em;
+        }
+      }
+      .blog-hero {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        // position: absolute;
+  
+        img {
+          width: 100%;
+        }
+        .blog-links {
+          position: relative;
+          display: inline-block;
+          left: 50%;
+          transform: translate(-50%, 0);
+          top: -30%;
+  
+          @include breakpoint(md) {
+            top: -20%;
+          }
+          .blog-link {
+            &:link,
+            &:visited {
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              border: #fff 4px solid;
+              padding: 10px;
+              text-align: center;
+              font-size: 1.1em;
+              font-weight: bold;
+              background-color: #fff;
+              color: #000;
+            }
+            &:active,
+            &:hover {
+              background-color: #000;
+              color: #fff;
+            }
+            &:not(:first-child){
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .blog-desc {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        p {
+          font-size: 1.2em;
+        }
+      }
+  
+      .align-left {
+        @include breakpoint(md) {
+          grid-column-start: 1;
+          grid-column-end: 7;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+      .align-right {
+        @include breakpoint(md) {
+          grid-column-start: 7;
+          grid-column-end: 13;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+    }
+  }
+  
