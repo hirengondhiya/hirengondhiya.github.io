@@ -1,5 +1,25 @@
 .content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 30px;
+    @include breakpoint(md) {
+        grid-template-rows: auto auto;
+    }
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 13;  
+    }
   .social {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      @include breakpoint(md) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+      }
+      .social-media {
+          justify-content: start;
+      }
     .social-text {
       margin: 20px 0;
       font-size: 1.3em;
@@ -20,6 +40,13 @@
     }
   }
   .contact {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      @include breakpoint(md) {
+        grid-column-start: 7;
+        grid-column-end: 13;
+      }
+
     .contact-text {
       margin: 20px 0;
       font-size: 1.3em;
