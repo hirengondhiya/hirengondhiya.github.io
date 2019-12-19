@@ -59,62 +59,57 @@
     </header>
     <section class="content">
       <section class="title">
-        <h1 class="title-text">About Me</h1>
+        <h1 class="title-text">Contact</h1>
       </section>
-      <section class="about-me">
-        <p>
-          Hello there, I am Hiren Gondhiya. 
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          voluptates, labore repellendus minima impedit doloremque quia debitis
-          hic dolore quod quibusdam! Ipsam fuga molestiae nemo totam doloremque
-          mollitia, facere dolorem?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis
-          dolor quisquam itaque possimus nostrum fugit consequatur dicta,
-          maiores, ipsam impedit autem laudantium. Repellat beatae, voluptas
-          asperiores cupiditate provident vero.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quas
-          repellendus tempora architecto molestias consequatur voluptate,
-          repellat, tempore debitis pariatur dolorum tenetur cum sunt
-          perferendis. Eveniet tempora labore recusandae facilis!
-        </p>
+      <section class="social">
+        <p class="social-text">I can be found on following social media sites</p>
+        <ul class="social-media">
+          <li>
+            <a href="https://www.linkedin.com/in/hirengondhiya/" target="_blank"
+              >
+              <img
+                class="icon"
+                src="/src/assets/linkedin-icon.svg"
+                alt="linkedin-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/hirengondhiya" target="_blank"
+              ><img
+                class="icon"
+                src="/src/assets/twitter-icon.svg"
+                alt="twitter-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/hirengondhiya" target="_blank"
+              ><img
+                class="icon"
+                src="/src/assets/github-icon.svg"
+                alt="github-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/5299312/hiren-gondhiya" target="_blank"
+              ><img
+                class="icon"
+                src="/src/assets/stackoverflow-icon.svg"
+                alt="stackoverflow-icon"
+            /></a>
+          </li>
+        </ul>
       </section>
-      <section class="skills">
-        <h2 class="sub-title">Skills</h2>
-        <div class="skills-data">
-          <div>
-            <h3 class="skill-title">Heading 1</h3>
-            <ul class="skill-items">
-              <li class="skill-item">Item 1</li>
-              <li class="skill-item">Item 2</li>
-              <li class="skill-item">Item 3</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="skill-title">Heading 2</h3>
-            <ul class="skill-items">
-              <li class="skill-item">Item 1</li>
-              <li class="skill-item">Item 2</li>
-              <li class="skill-item">Item 3</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="skill-title">Heading 3</h3>
-            <ul class="skill-items">
-              <li class="skill-item">Item 1</li>
-              <li class="skill-item">Item 2</li>
-              <li class="skill-item">Item 3</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="download">
-        <a href="/src/assets/Hiren-Gondhiya-CV.pdf" class="download-cv">Download CV</a>
+      <section class="contact">
+        <p class="contact-text">
+          or leave your details below and I will contact you as soon as I can
+        </p>
+        <form class="contact-form" action="https://formspree.io/xgeovroy" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="number" name="mobile" placeholder="Mobile Number" required>
+          <input type="email" name="_replyto" placeholder="Email Address" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </section>
   </body>
