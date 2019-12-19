@@ -328,6 +328,37 @@ body {
 .projects .project .project-hero img {
   width: 100%;
 }
+.projects .project .project-hero .project-links {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -30%;
+}
+@media (min-width: 992px) {
+  .projects .project .project-hero .project-links {
+    top: -20%;
+  }
+}
+.projects .project .project-hero .project-links .project-link:link, .projects .project .project-hero .project-links .project-link:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: #fff 4px solid;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+.projects .project .project-hero .project-links .project-link:active, .projects .project .project-hero .project-links .project-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+.projects .project .project-hero .project-links .project-link:not(:first-child) {
+  margin-left: 20px;
+}
 .projects .project .project-desc {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -339,11 +370,15 @@ body {
   .projects .project .align-left {
     grid-column-start: 1;
     grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 @media (min-width: 992px) {
   .projects .project .align-right {
     grid-column-start: 7;
     grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }

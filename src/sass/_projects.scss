@@ -10,6 +10,7 @@
 
     @include breakpoint(md) {
       grid-template-rows: auto auto;
+
     }
 
     .project-title {
@@ -19,12 +20,48 @@
       h2 {
         font-size: 1.25em;
       }
-    } 
+    }
     .project-hero {
       grid-column-start: 1;
       grid-column-end: 13;
+      // position: absolute;
+
       img {
         width: 100%;
+      }
+      .project-links {
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -30%;
+
+        @include breakpoint(md) {
+          top: -20%;
+        }
+        .project-link {
+          &:link,
+          &:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: #fff 4px solid;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: #fff;
+            color: #000;
+          }
+          &:active,
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+          &:not(:first-child){
+            margin-left: 20px;
+          }
+        }
       }
     }
     .project-desc {
@@ -39,12 +76,16 @@
       @include breakpoint(md) {
         grid-column-start: 1;
         grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
       }
     }
     .align-right {
       @include breakpoint(md) {
         grid-column-start: 7;
         grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3;
       }
     }
   }
