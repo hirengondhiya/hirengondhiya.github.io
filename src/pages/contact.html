@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css" />
   </head>
 
-  <body>
+  <body class="contact-page">
     <header class="header">
       <div class="header-top">
         <a class="title" href="/index.html">Hiren Gondhiya</a>
@@ -104,6 +104,7 @@
           or leave your details below and I will contact you as soon as I can
         </p>
         <form class="contact-form" action="https://formspree.io/xgeovroy" method="POST">
+          <input type="hidden" name="_next" value="https://hirengondhiya.github.io"/>
           <input type="text" name="name" placeholder="Name" required>
           <input type="number" name="mobile" placeholder="Mobile Number" required>
           <input type="email" name="_replyto" placeholder="Email Address" required>

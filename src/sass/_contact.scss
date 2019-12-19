@@ -1,16 +1,18 @@
-.content {
+.contact-page {
+  .content {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-column-gap: 30px;
+    // grid-column-gap: 30px;
     @include breakpoint(md) {
-        grid-template-rows: auto auto;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto;
     }
     .title {
-        grid-column-start: 1;
-        grid-column-end: 13;  
+      grid-column-start: 1;
+      grid-column-end: 13;
     }
-  .social {
+    .social {
       grid-column-start: 1;
       grid-column-end: 13;
       @include breakpoint(md) {
@@ -18,28 +20,20 @@
         grid-column-end: 7;
       }
       .social-media {
-          justify-content: start;
-      }
-    .social-text {
-      margin: 20px 0;
-      font-size: 1.3em;
-      line-height: 1.3em;
-    }
-    .social-icons {
-      // text-align: center;
-      display: flex;
-      justify-content: space-evenly;
-      .icon {
-        width: 64px;
-        height: 64px;
+        justify-content: start;
 
-        // &:not(:first-child) {
-        //     margin-left: 15px;
-        // }
+        .icon {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .social-text {
+        margin: 20px 0;
+        font-size: 1.3em;
+        line-height: 1.3em;
       }
     }
-  }
-  .contact {
+    .contact {
       grid-column-start: 1;
       grid-column-end: 13;
       @include breakpoint(md) {
@@ -47,65 +41,66 @@
         grid-column-end: 13;
       }
 
-    .contact-text {
-      margin: 20px 0;
-      font-size: 1.3em;
-      line-height: 1.3em;
-    }
+      .contact-text {
+        margin: 20px 0;
+        font-size: 1.3em;
+        line-height: 1.3em;
+      }
 
-    .contact-form {
+      .contact-form {
         // max-width: 400px;
         margin: 10px auto;
         // padding: 16px;
         // background: #f7f7f7;
 
-      input[type="text"],
-      input[type="email"],
-      input[type="number"],
-      textarea{
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        outline: none;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        width: 100%;
-        background: #fff;
-        margin-bottom: 4%;
-        border: 1px solid #ccc;
-        padding: 3%;
-        color: #555;
-        font-size: 1.1em;
-      }
-      input[type="text"]:focus,
-      input[type="email"]:focus,
-      input[type="number"]:focus,
-      textarea:focus {
-        box-shadow: 0 0 5px #313333;
-        padding: 3%;
-        border: 1px solid #212222;
-      }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          outline: none;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          width: 100%;
+          background: #fff;
+          margin-bottom: 4%;
+          border: 1px solid #ccc;
+          padding: 3%;
+          color: #555;
+          font-size: 1.1em;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+          box-shadow: 0 0 5px #313333;
+          padding: 3%;
+          border: 1px solid #212222;
+        }
 
-      input[type="submit"],
-      input[type="button"] {
+        input[type="submit"],
+        input[type="button"] {
           font-size: 1.3em;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        width: 100%;
-        padding: 3%;
-        background: #262928;
-        border-bottom: 2px solid #363838;
-        border-top-style: none;
-        border-right-style: none;
-        border-left-style: none;
-        color: #fff;
-      }
-      input[type="submit"]:hover,
-      input[type="button"]:hover {
-        background: #687270;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          width: 100%;
+          padding: 3%;
+          background: #262928;
+          border-bottom: 2px solid #363838;
+          border-top-style: none;
+          border-right-style: none;
+          border-left-style: none;
+          color: #fff;
+        }
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+          background: #687270;
+        }
       }
     }
   }
