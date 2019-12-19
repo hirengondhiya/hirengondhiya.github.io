@@ -466,3 +466,23 @@ body {
     grid-row-end: 3;
   }
 }
+
+.content .title p {
+  font-size: 1.05em;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+@media (min-width: 992px) {
+  .content .blog-content .blog-hero {
+    float: left;
+  }
+}
+.content .blog-content .blog-hero img {
+  width: 75vw;
+}
+@media (min-width: 992px) {
+  .content .blog-content .blog-hero img {
+    width: 35vw;
+    padding-right: 20px;
+  }
+}
