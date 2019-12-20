@@ -20,32 +20,42 @@
 
         - Small Screen
         ![mobile landing page](./docs/Mobile-LandingPage.png)
+
         - Small Screen Menu
         ![mobile menu](./docs/Mobile-Menuexpanded.png)
+
         - Large Screen
         ![desktop landing page](./docs/LandingPage.png)
+
     2. About Page
 
         - Small Screen
         ![mobile about page](./docs/Mobile-About.png)
+
         - Large Screen
         ![desktop about page](./docs/About.png)
+
     3. Projects Page
 
         - Small Screen
         ![Mobile Projects Page](./docs/Mobile-Projects.png)
+
         - Large Screen
         ![](./docs/Projects.png)
+
     4. Blogs Page
 
         - Small Screen
         ![Mobile Page](./docs/Mobile-Blog.png)
+
         - Large Screen
         ![](./docs/Blog.png)
+
     5. Contact Page
 
         - Small Screen
         ![Mobile Page](./docs/Mobile-Contact.png)
+        
         - Large Screen
         ![](./docs/Contact.png)
 
