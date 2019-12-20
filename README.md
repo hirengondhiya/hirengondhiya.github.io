@@ -84,13 +84,50 @@
 
         The grey background on the menu item indicates the page that is being browsed by the user.
     2. **Social Media Icons List**
+
+        The main purpose of this component is to advertise about the social media applications that I currently use and that way allow the users to follow/contact me on social media.
+
+        The component uses svg icons belonging to each social media that I am using. 
+
+        This feature is reausable it is used on Home Page below profile image and on Contact page.
     3. **Favicon**
+
+        Favicon is a small icon that shows up on the tab next to site title. I have used my profile image as favicon since the website is mainly conveying my personal brand.
+
+        By applying favicon it is very easy to identify my website when there are multiple tabs belonging to different websites are open in a single browser window.
+
     4. **Greeting on Home Page**
-    5. **Multilevel Skills List**
+
+        The greeting component is used on home page to welcome the user as well as give a brief idea of what this site is all about.
+
+        The component is made up of two parts a heading and a greeting text.
+
+    5. **Two Dimentional Skills List**
+
+        The two dimentional skills list was developed to communicate different category and the specific skills under each category.
+
+        The component uses table like layout where each category heading and the skills for the category acts as a single column of the table.
+
     6. **Large Download CV Button**
+
+        Download CV button is used to give a link to my pdf format CV. The link is styled to look like a big button so that it gets users attention.
+
     7. **Alternating Image and Text based grid (on Projects and Blogs pages)**
+
+        Alternating Image and Text component is used to give an interesting look to the the page by using two column **CSS Grid** layout and by alternate placing of images and text in columns.
+
     8. **News Page type text wrapping around main image**
-    9. **Responsive Contact Form**
+
+        The blog page that can be accessed by clicking/touching blog title from listing page, implements test wrap around feature to give the blog a layout similar to used by News Articles.
+
+        The feature is implemented by using float property of css.
+
+    9. **Responsive Design**
+
+        All the pages on the web site are responsive to make sure the content is readable both on small screen and large screen devices.
+
+        Media queries are used for implementing the responsive design features.
+
 - ### Sitemap
 - ### Screenshots
     - Mobile
