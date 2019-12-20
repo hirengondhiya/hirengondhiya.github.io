@@ -19,13 +19,16 @@
     1. Home Page
 
         - Small Screen
-        ![mobile landing page](./docs/Mobile-LandingPage.png)
+
+            ![mobile landing page](./docs/Mobile-LandingPage.png)
 
         - Small Screen Menu
-        ![mobile menu](./docs/Mobile-Menuexpanded.png)
+
+            ![mobile menu](./docs/Mobile-Menuexpanded.png)
 
         - Large Screen
-        ![desktop landing page](./docs/LandingPage.png)
+
+            ![desktop landing page](./docs/LandingPage.png)
 
     2. About Page
 
