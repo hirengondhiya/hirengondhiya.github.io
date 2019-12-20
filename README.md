@@ -129,6 +129,9 @@
         Media queries are used for implementing the responsive design features.
 
 - ### Sitemap
+
+    ![site map](./docs/sitemap.png)
+
 - ### Screenshots
     - Mobile
     - Desktop
