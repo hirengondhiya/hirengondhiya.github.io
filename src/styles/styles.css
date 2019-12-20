@@ -259,22 +259,28 @@ body {
 }
 .content .skills .skills-data {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
-.content .skills .skills-data div {
-  width: 40%;
+.content .skills .skills-data .skill-major {
+  margin: 10px;
 }
-.content .skills .skills-data .skill-title {
+@media (min-width: 992px) {
+  .content .skills .skills-data .skill-major {
+    flex-basis: 15%;
+  }
+}
+.content .skills .skills-data .skill-major .skill-title {
   margin-bottom: 10px;
 }
-.content .skills .skills-data .skill-items {
+.content .skills .skills-data .skill-major .skill-items {
   list-style: none;
 }
-.content .skills .skills-data .skill-items .skill-item {
+.content .skills .skills-data .skill-major .skill-items .skill-item {
   padding-left: 5px;
 }
-.content .skills .skills-data .skill-items .skill-item:not(:first-child) {
+.content .skills .skills-data .skill-major .skill-items .skill-item:not(:first-child) {
   padding-top: 5px;
 }
 .content .download {
