@@ -46,18 +46,18 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            border: #fff 4px solid;
+            border: $light-color 4px solid;
             padding: 10px;
             text-align: center;
             font-size: 1.1em;
             font-weight: bold;
-            background-color: #fff;
-            color: #000;
+            background-color: $light-color;
+            color: $main-color;
           }
           &:active,
           &:hover {
-            background-color: #000;
-            color: #fff;
+            background-color: $main-color;
+            color: $light-color;
           }
           &:not(:first-child){
             margin-left: 20px;

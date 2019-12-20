@@ -116,7 +116,7 @@ body {
   }
 }
 .header .nav ul li .nav-link.active {
-  background-color: #888888;
+  background-color: #888;
 }
 .header .nav ul li .nav-link:link, .header .nav ul li .nav-link:visited {
   padding: 14px 0;
@@ -478,12 +478,13 @@ body {
   }
 }
 .content .blog-content .blog-hero img {
-  width: 75vw;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .content .blog-content .blog-hero img {
     width: 35vw;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
 }
 

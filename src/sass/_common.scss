@@ -1,7 +1,10 @@
-$menu-on-hover-color: red;
-$menu-items-color: green;
-$menu-background: orange;
-$menu-current-link-color: blue;
+$main-color: #000;
+$mid-color: #888;
+$light-color: #fff;
+$submit-background: #262928;
+$submit-border: #363838;
+$submit-hover: #687270;
+
 
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -38,7 +41,7 @@ a {
   &:active,
   &:link,
   &:hover {
-    color: #000;
+    color: $main-color;
   }
 }
 
@@ -70,7 +73,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: $light-color;
 
     .title {
       text-transform: uppercase;
@@ -105,7 +108,7 @@ body {
 
   .nav {
     display: none;
-    background-color: #fff;
+    background-color: $light-color;
 
     border-top: ridge;
     border-bottom: ridge;
@@ -119,11 +122,9 @@ body {
     }
 
     ul {
-      // background-color: $menu-background;
       li {
         list-style: none;
-        // background-color: $menu-items-color;
-        border-bottom: #fff solid 0.5px;
+        border-bottom: $light-color solid 0.5px;
         .nav-link {
           font-size: large;
           font-weight: bold;
@@ -134,25 +135,22 @@ body {
             font-size: 1.25em;
           }
           &.active {
-            background-color: #888888;
+            background-color: #888;
           }
           &:link,
           &:visited {
-            // background-color: #f44336;
-            // color: white;
             padding: 14px 0;
             @include breakpoint(sm) {
               padding: 16px 0;
             }
             text-align: center;
-            // text-decoration: none;
             display: inline-block;
             width: 100%;
           }
           &:hover,
           &:active {
-            background-color: #000;
-            color: #fff;
+            background-color: $main-color;
+            color: $light-color;
           }
         }
       }
@@ -161,12 +159,8 @@ body {
 }
 
 .content {
-  // background: url(/src/assets/home.jpg) center center no-repeat;
-  // background-color: teal;
-  // background-size: cover;
   min-height: 90vh;
   padding: 0 30px 20px 30px;
-  // padding-bottom: 20px;
 
   @include breakpoint(sm) {
     margin-top: 1vh;

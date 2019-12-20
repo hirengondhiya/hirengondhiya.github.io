@@ -66,7 +66,7 @@
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           width: 100%;
-          background: #fff;
+          background: $light-color;
           margin-bottom: 4%;
           border: 1px solid #ccc;
           padding: 3%;
@@ -90,16 +90,16 @@
           -moz-box-sizing: border-box;
           width: 100%;
           padding: 3%;
-          background: #262928;
-          border-bottom: 2px solid #363838;
+          background: $submit-background;
+          border-bottom: 2px solid $submit-border;
           border-top-style: none;
           border-right-style: none;
           border-left-style: none;
-          color: #fff;
+          color: $light-color;
         }
         input[type="submit"]:hover,
         input[type="button"]:hover {
-          background: #687270;
+          background: $submit-hover;
         }
       }
     }
