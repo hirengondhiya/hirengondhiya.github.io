@@ -132,8 +132,45 @@
 
     ![site map](./docs/sitemap.png)
 
+    As indicated in image above the site has a home page which is rendered by index.html and four sub pages About.html, Projectcs.html, Blogs.html, and Contact.html. All of the above pages can be accessed through the menu.
+
+    The Blog.html is the blog page which can be accessed from Blogs.html by clicking on title of blog listing.
+
 - ### Screenshots
     - Mobile
+
+        1. Home Page
+            ![home](./docs/mobile-home.png)
+        2. Menu Expanded
+            ![menu](./docs/mobile-menu.png)
+        3. About
+            ![about](./docs/mobile-about-me.png)
+        4. Projects
+            ![projects](./docs/mobile-projects-2.png)
+        5. Blogs
+            ![blogs](./docs/mobile-blogs.png)
+        6. Blog
+            ![blogs](./docs/mobile-blog-2.png)
+        7. Contact
+            ![contact](./docs/mobile-contact-2.png)
+
     - Desktop
+
+
+        1. Home Page
+            ![home](./docs/home.png)
+        2. Menu Expanded
+            ![menu](./docs/menu.png)
+        3. About
+            ![about](./docs/about-me.png)
+        4. Projects
+            ![projects](./docs/projects-2.png)
+        5. Blogs
+            ![blogs](./docs/blogs.png)
+        6. Blog
+            ![blogs](./docs/blog-2.png)
+        7. Contact
+            ![contact](./docs/contact-2.png)
+
 - ### Target Audience
 - ### Tech stack
