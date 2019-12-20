@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 a:visited, a:active, a:link, a:hover {
-  color: #000;
+  color: #380E30;
 }
 
 p {
@@ -116,7 +116,7 @@ body {
   }
 }
 .header .nav ul li .nav-link.active {
-  background-color: #888;
+  background-color: #6E4F68;
 }
 .header .nav ul li .nav-link:link, .header .nav ul li .nav-link:visited {
   padding: 14px 0;
@@ -130,7 +130,7 @@ body {
   }
 }
 .header .nav ul li .nav-link:hover, .header .nav ul li .nav-link:active {
-  background-color: #000;
+  background-color: #380E30;
   color: #fff;
 }
 
@@ -286,16 +286,16 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border: #000 4px solid;
+  border: #380E30 4px solid;
   padding: 20px;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  color: #000;
+  color: #380E30;
 }
 .content .download .download-cv:hover,
 .content .download .download-cv:active {
-  background-color: #000;
+  background-color: #380E30;
   color: #fff;
 }
 
@@ -350,10 +350,10 @@ body {
   font-size: 1.1em;
   font-weight: bold;
   background-color: #fff;
-  color: #000;
+  color: #380E30;
 }
 .projects .project .project-hero .project-links .project-link:active, .projects .project .project-hero .project-links .project-link:hover {
-  background-color: #000;
+  background-color: #380E30;
   color: #fff;
 }
 .projects .project .project-hero .project-links .project-link:not(:first-child) {
@@ -434,10 +434,10 @@ body {
   font-size: 1.1em;
   font-weight: bold;
   background-color: #fff;
-  color: #000;
+  color: #380E30;
 }
 .blogs .blog .blog-hero .blog-links .blog-link:active, .blogs .blog .blog-hero .blog-links .blog-link:hover {
-  background-color: #000;
+  background-color: #380E30;
   color: #fff;
 }
 .blogs .blog .blog-hero .blog-links .blog-link:not(:first-child) {
@@ -579,8 +579,8 @@ body {
   -moz-box-sizing: border-box;
   width: 100%;
   padding: 3%;
-  background: #262928;
-  border-bottom: 2px solid #363838;
+  background: #330D2C;
+  border-bottom: 2px solid #2E0C28;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
@@ -588,5 +588,5 @@ body {
 }
 .contact-page .content .contact .contact-form input[type=submit]:hover,
 .contact-page .content .contact .contact-form input[type=button]:hover {
-  background: #687270;
+  background: #927B8E;
 }

@@ -1,9 +1,9 @@
-$main-color: #000;
-$mid-color: #888;
+$main-color: #380E30;
+$mid-color: #6E4F68;
 $light-color: #fff;
-$submit-background: #262928;
-$submit-border: #363838;
-$submit-hover: #687270;
+$submit-background: #330D2C;
+$submit-border: #2E0C28;
+$submit-hover: #927B8E;
 
 
 @mixin breakpoint($class) {
@@ -135,7 +135,7 @@ body {
             font-size: 1.25em;
           }
           &.active {
-            background-color: #888;
+            background-color: $mid-color;
           }
           &:link,
           &:visited {
