@@ -201,3 +201,12 @@
 
     Target audience for this website is perspective employers who are looking for a fullstack developer and fellow developers who would like to network with me.
 - ### Tech stack
+
+    Following technologies were used to build the website.
+
+    - HTML
+    - CSS
+    - SASS
+    - JavaScript
+    - jQuery
+    - Balsamiq (for wireframe generation)
