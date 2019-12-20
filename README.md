@@ -140,7 +140,7 @@
     - Mobile
 
         1. Home Page
-        
+
             ![home](./docs/mobile-home.png)
 
         2. Menu Expanded
@@ -198,4 +198,6 @@
             ![contact](./docs/contact-2.png)
 
 - ### Target Audience
+
+    Target audience for this website is perspective employers who are looking for a fullstack developer and fellow developers who would like to network with me.
 - ### Tech stack
