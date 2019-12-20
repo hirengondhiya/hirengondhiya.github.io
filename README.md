@@ -74,7 +74,7 @@
 
     Keeping simplines and cleanliness as main goal following features were implemented on the website to engage the users and feed important content.
 
-    1. Responsive Expandable Menu
+    1. **Responsive Expandable Menu**
         
         The menu on the website is responsive to allow small screen and large screen users to efficiently navigate around the pages.
 
@@ -83,14 +83,14 @@
         For consistency the menu functions similarly on small screen and large screen device.
 
         The grey background on the menu item indicates the page that is being browsed by the user.
-    2. Social Media Icons List
-    3. Favicon
-    4. Greeting on Home Page
-    5. Multilevel Skills List
-    6. Large Download CV Button
-    7. Alternating Image and Text based grid (on Projects and Blogs pages)
-    8. News Page type text wrapping around main image
-    9. Responsive Contact Form
+    2. **Social Media Icons List**
+    3. **Favicon**
+    4. **Greeting on Home Page**
+    5. **Multilevel Skills List**
+    6. **Large Download CV Button**
+    7. **Alternating Image and Text based grid (on Projects and Blogs pages)**
+    8. **News Page type text wrapping around main image**
+    9. **Responsive Contact Form**
 - ### Sitemap
 - ### Screenshots
     - Mobile
