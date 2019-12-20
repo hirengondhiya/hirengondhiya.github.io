@@ -71,6 +71,18 @@
             ![](./docs/Contact.png)
 
 - ### Features
+
+    As evident from above screen prints the website has following main features.
+
+    1. Responsive Menu
+    2. Social Media Icons List
+    3. Favicon
+    4. Greeting on Home Page
+    5. Multilevel Skills List
+    6. Large Download CV Button
+    7. Alternating Image and Text based grid (on Projects and Blogs pages)
+    8. News Page type text wrapping around main image
+    9. Responsive Contact Form
 - ### Sitemap
 - ### Screenshots
     - Mobile
