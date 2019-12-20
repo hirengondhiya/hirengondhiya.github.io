@@ -72,9 +72,17 @@
 
 - ### Features
 
-    As evident from above screen prints the website has following main features.
+    Keeping simplines and cleanliness as main goal following features were implemented on the website to engage the users and feed important content.
 
-    1. Responsive Menu
+    1. Responsive Expandable Menu
+        
+        The menu on the website is responsive to allow small screen and large screen users to efficiently navigate around the pages.
+
+        To make optimal use of the screen space menu is initially collapsed and can be expanded by clicking/touching bars icon which then changes to **X** to give a clue to the user that the menu can be collapsed by clicking/touching it.
+
+        For consistency the menu functions similarly on small screen and large screen device.
+
+        The grey background on the menu item indicates the page that is being browsed by the user.
     2. Social Media Icons List
     3. Favicon
     4. Greeting on Home Page
