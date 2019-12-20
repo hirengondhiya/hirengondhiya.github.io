@@ -135,7 +135,7 @@ body {
             font-size: 1.25em;
           }
           &.active {
-            background-color: #$mid-color;
+            background-color: $mid-color;
           }
           &:link,
           &:visited {
